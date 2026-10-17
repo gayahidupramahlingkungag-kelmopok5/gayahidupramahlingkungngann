@@ -1,0 +1,211 @@
+﻿
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EcoLife - Peduli Bumi</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#f7f8f0;color:#263b2d;line-height:1.7}
+header{background:#205c43;color:white;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+nav{display:flex;gap:15px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none}
+.hero{padding:110px 8%;color:white;background:linear-gradient(90deg,#123e2bdc,#123e2b45),url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1600&q=80') center/cover}
+.hero h1{font-size:clamp(36px,6vw,60px);line-height:1.2;margin-bottom:20px}
+.hero p{max-width:600px;margin-bottom:25px}
+.btn{display:inline-block;background:#205c43;color:white;text-decoration:none;padding:12px 24px;border-radius:8px}
+.btn:hover{background:#347b57}
+section{padding:65px 8%}
+.title{text-align:center;color:#205c43;font-size:32px;margin-bottom:12px}
+.intro{text-align:center;color:#617065;margin:0 auto 35px;max-width:700px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.about img{width:100%;height:330px;object-fit:cover;border-radius:15px}
+.about h2{color:#205c43;margin-bottom:15px}
+.about p{margin-bottom:12px}
+.stats{background:#205c43;color:white;display:grid;grid-template-columns:repeat(3,1fr);text-align:center;padding:35px 8%;gap:20px}
+.stats h3{font-size:28px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
+.card{background:white;border-radius:14px;overflow:hidden;box-shadow:0 5px 18px #0000000d;transition:.2s}
+.card:hover{transform:translateY(-5px)}
+.card img{width:100%;height:180px;object-fit:cover}
+.content{padding:20px}
+.content h3{color:#205c43;margin:8px 0}
+.content p{font-size:14px;color:#617065}
+.icon{font-size:28px}
+.facts,.challenge{background:#e5eedf}
+.fact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.fact{background:white;padding:24px;border-radius:12px;border-left:4px solid #205c43}
+.fact h3{color:#205c43;margin-bottom:8px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.gallery img{width:100%;height:220px;object-fit:cover;border-radius:12px}
+.checklist{max-width:620px;margin:auto;padding:25px;background:white;border-radius:14px}
+.checklist label{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid #eee;cursor:pointer}
+.checklist input{width:18px;height:18px;margin-top:5px;accent-color:#205c43}
+.checklist input:checked+span{text-decoration:line-through;color:#789080}
+.track{height:12px;background:#e5eedf;border-radius:20px;margin-top:20px;overflow:hidden}
+.bar{height:100%;width:0;background:#347b57;transition:.3s}
+#progress{margin-top:12px;color:#205c43;font-weight:bold}
+.cta{text-align:center;color:white;background:linear-gradient(#174c37d9,#174c37d9),url('https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1400&q=80') center/cover}
+.cta h2{font-size:34px;margin-bottom:12px}
+.cta p{max-width:650px;margin:0 auto 25px}
+.light{background:white;color:#205c43}
+footer{background:#163e2d;color:white;padding:40px 8% 20px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:25px;margin-bottom:25px}
+footer a{color:#d5e3d9;text-decoration:none}
+footer ul{list-style:none}
+footer li{margin:5px 0}
+.copyright{text-align:center;border-top:1px solid #ffffff30;padding-top:18px;font-size:13px}
+@media(max-width:700px){header{justify-content:center}nav{justify-content:center}.about{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr}section{padding:45px 6%}.hero{padding:75px 7%}}
+@media(max-width:430px){.gallery{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+<h2>🌿 EcoLife</h2>
+<nav>
+<a href="#beranda">Beranda</a>
+<a href="#tentang">Tentang</a>
+<a href="#tips">Tips</a>
+<a href="#fakta">Fakta</a>
+<a href="#galeri">Galeri</a>
+<a href="#aksi">Aksi Saya</a>
+</nav>
+</header>
+
+<section class="hero" id="beranda">
+<h1>Bumi Lebih Baik,<br>Dimulai dari Kita.</h1>
+<p>Mari terapkan gaya hidup ramah lingkungan melalui langkah kecil yang bermanfaat bagi bumi dan generasi mendatang.</p>
+<a href="#tips" class="btn">Jelajahi Tips 🌱</a>
+</section>
+
+<section id="tentang">
+<div class="about">
+<img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=900&q=80" alt="Tanaman hijau">
+<div>
+<h2>Tentang EcoLife</h2>
+<p>EcoLife adalah website edukasi yang mengajak masyarakat untuk menjalani gaya hidup ramah lingkungan.</p>
+<p>Melalui kebiasaan sederhana, kita dapat membantu mengurangi sampah, menghemat energi, dan menjaga kelestarian alam.</p>
+<ul>
+<li>🌱 Menjaga kelestarian alam</li>
+<li>♻️ Mengurangi sampah plastik</li>
+<li>💧 Menghemat air bersih</li>
+<li>🌍 Melindungi bumi untuk masa depan</li>
+</ul>
+<a href="#aksi" class="btn">Mulai Sekarang</a>
+</div>
+</div>
+</section>
+
+<div class="stats">
+<div><h3>♻️</h3><p>Kurangi Sampah</p></div>
+<div><h3>🌳</h3><p>Jaga Lingkungan</p></div>
+<div><h3>💧</h3><p>Hemat Air</p></div>
+</div>
+
+<section id="tips">
+<h2 class="title">Tips Hidup Ramah Lingkungan</h2>
+<p class="intro">Mulai dari kebiasaan sederhana yang dapat dilakukan setiap hari.</p>
+<div class="cards">
+
+<div class="card"><img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=700&q=80" alt="Lingkungan hijau"><div class="content"><div class="icon">♻️</div><h3>Kurangi Sampah</h3><p>Bawa tas belanja sendiri, gunakan botol isi ulang, dan hindari plastik sekali pakai.</p></div></div>
+
+<div class="card"><img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=700&q=80" alt="Energi"><div class="content"><div class="icon">💡</div><h3>Hemat Energi</h3><p>Matikan lampu dan alat elektronik ketika tidak digunakan.</p></div></div>
+
+<div class="card"><img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=700&q=80" alt="Hutan"><div class="content"><div class="icon">🚲</div><h3>Transportasi Hijau</h3><p>Berjalan kaki, bersepeda, atau gunakan transportasi umum jika memungkinkan.</p></div></div>
+
+<div class="card"><img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=700&q=80" alt="Kebun"><div class="content"><div class="icon">🌱</div><h3>Menanam Tanaman</h3><p>Rawat tanaman di rumah dan ikut menjaga ruang hijau.</p></div></div>
+
+<div class="card"><img src="https://images.unsplash.com/photo-1437482078695-73f5ca6c96e2?auto=format&fit=crop&w=700&q=80" alt="Air"><div class="content"><div class="icon">💧</div><h3>Hemat Air</h3><p>Tutup keran saat tidak digunakan dan hindari pemborosan air.</p></div></div>
+
+<div class="card"><img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=700&q=80" alt="Sayuran"><div class="content"><div class="icon">🥬</div><h3>Belanja Bijak</h3><p>Beli barang sesuai kebutuhan dan pilih produk yang tahan lama.</p></div></div>
+
+<div class="card"><img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=700&q=80" alt="Daur ulang"><div class="content"><div class="icon">🗑️</div><h3>Pilah Sampah</h3><p>Pisahkan sampah organik, bahan daur ulang, dan residu.</p></div></div>
+
+<div class="card"><img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=700&q=80" alt="Makanan"><div class="content"><div class="icon">🍎</div><h3>Kurangi Sisa Makanan</h3><p>Ambil makanan secukupnya dan simpan bahan pangan dengan benar.</p></div></div>
+
+<div class="card"><img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=700&q=80" alt="Hutan lestari"><div class="content"><div class="icon">🌳</div><h3>Lindungi Hutan</h3><p>Jaga pepohonan, habitat satwa, dan kebersihan lingkungan.</p></div></div>
+
+</div>
+</section>
+
+<section class="facts" id="fakta">
+<h2 class="title">Tahukah Kamu?</h2>
+<p class="intro">Kenali pentingnya menjaga lingkungan.</p>
+<div class="fact-grid">
+<div class="fact"><h3>♻️ Sampah Plastik</h3><p>Plastik dapat bertahan lama di lingkungan. Kurangi barang sekali pakai.</p></div>
+<div class="fact"><h3>🌡️ Perubahan Iklim</h3><p>Emisi gas rumah kaca berkontribusi terhadap perubahan iklim.</p></div>
+<div class="fact"><h3>🌳 Hutan</h3><p>Hutan merupakan habitat satwa dan membantu menyimpan karbon.</p></div>
+<div class="fact"><h3>💧 Air Bersih</h3><p>Air bersih penting bagi kehidupan. Gunakan secara bijak.</p></div>
+</div>
+</section>
+
+<section id="galeri">
+<h2 class="title">Galeri Bumi Kita</h2>
+<p class="intro">Keindahan alam yang harus dijaga bersama.</p>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=700&q=80" alt="Hutan hijau" loading="lazy">
+<img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=700&q=80" alt="Matahari terbit" loading="lazy">
+<img src="https://images.unsplash.com/photo-1497436072909-60f36a5d3c2a?auto=format&fit=crop&w=700&q=80" alt="Pepohonan" loading="lazy">
+<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=700&q=80" alt="Tanaman" loading="lazy">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=700&q=80" alt="Pemandangan alam" loading="lazy">
+<img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=700&q=80" alt="Dedaunan" loading="lazy">
+</div>
+</section>
+
+<section class="challenge" id="aksi">
+<h2 class="title">🌍 Tantangan Hari Ini</h2>
+<p class="intro">Centang kegiatan yang sudah kamu lakukan!</p>
+<div class="checklist">
+<label><input type="checkbox"><span>Membawa botol minum sendiri</span></label>
+<label><input type="checkbox"><span>Mematikan lampu yang tidak digunakan</span></label>
+<label><input type="checkbox"><span>Mengurangi plastik sekali pakai</span></label>
+<label><input type="checkbox"><span>Menghemat air</span></label>
+<label><input type="checkbox"><span>Memilah sampah</span></label>
+<label><input type="checkbox"><span>Menghabiskan makanan</span></label>
+<label><input type="checkbox"><span>Merawat tanaman</span></label>
+<label><input type="checkbox"><span>Berjalan kaki atau naik transportasi umum</span></label>
+<div class="track"><div class="bar" id="bar"></div></div>
+<p id="progress" aria-live="polite">0 dari 8 kegiatan selesai 🌱</p>
+</div>
+</section>
+
+<section class="cta">
+<h2>Jadilah Bagian dari Perubahan!</h2>
+<p>Mulailah dari satu kebiasaan baik hari ini. Ajak keluarga dan teman untuk ikut menjaga bumi.</p>
+<a href="#aksi" class="btn light">Mulai Tantangan 🌱</a>
+</section>
+
+<footer>
+<div class="footer-grid">
+<div><h3>🌿 EcoLife</h3><p>Website edukasi gaya hidup ramah lingkungan untuk masa depan yang lebih hijau.</p></div>
+<div><h3>Navigasi</h3><ul><li><a href="#beranda">Beranda</a></li><li><a href="#tentang">Tentang</a></li><li><a href="#tips">Tips</a></li><li><a href="#fakta">Fakta</a></li></ul></div>
+<div><h3>Jelajahi</h3><ul><li><a href="#galeri">Galeri</a></li><li><a href="#aksi">Tantangan</a></li><li><a href="#beranda">Kembali ke atas ↑</a></li></ul></div>
+</div>
+<div class="copyright">
+<p>🌿 EcoLife — Satu Bumi, Tanggung Jawab Bersama.</p>
+<p>&copy; 2026 EcoLife. Mari jaga bumi kita.</p>
+</div>
+</footer>
+
+<script>
+const checks = document.querySelectorAll('.checklist input');
+const progress = document.getElementById('progress');
+const bar = document.getElementById('bar');
+
+function updateProgress() {
+  const done = [...checks].filter(item => item.checked).length;
+  const total = checks.length;
+  bar.style.width = (done / total * 100) + '%';
+
+  progress.textContent = done === total
+    ? 'Hebat! Semua tantangan selesai. Terima kasih sudah menjaga bumi! 🌍'
+    : `${done} dari ${total} kegiatan selesai 🌱`;
+}
+
+checks.forEach(item => item.addEventListener('change', updateProgress));
+</script>
+
+</body>
+</html>
